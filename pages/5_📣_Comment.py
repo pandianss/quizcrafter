@@ -1,8 +1,13 @@
 import streamlit as st
 
-st.set_page_config(page_title='QuizCrafter/Comment',page_icon='assets\\color.svg')    
+with open('assets\\toast.txt', 'r') as messages:
+    toast_message = messages.readline()
 
-with open('countries.txt', 'r') as file:
+st.set_page_config(page_title='Comment . QuizCrafter',page_icon='assets\\color.svg')    
+st.toast(toast_message)
+st.sidebar.chat_input('Ask something')
+
+with open('assets\\countries.txt', 'r') as file:
     countries = file.readlines()
 
 def comment():

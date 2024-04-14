@@ -1,3 +1,7 @@
 import streamlit as st
-st.set_page_config(page_title='QuizCrafter/Compete',page_icon='assets\\color.svg')    
+with open('assets\\toast.txt', 'r') as messages:
+    toast_message = messages.readline()
+st.set_page_config(page_title='Compete . QuizCrafter',page_icon='assets\\color.svg')    
 st.header('Compete')
+st.toast(toast_message)
+st.sidebar.chat_input('Ask something')
