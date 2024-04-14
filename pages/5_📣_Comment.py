@@ -1,5 +1,7 @@
 import streamlit as st
 
+st.set_page_config(page_title='QuizCrafter/Comment',page_icon='assets\\color.svg')    
+
 with open('countries.txt', 'r') as file:
     countries = file.readlines()
 
@@ -11,7 +13,7 @@ def comment():
         my_comment = st.text_area('Comment:',height=200)
         comment_button = st.form_submit_button('Submit comment')
 
-st.set_page_config(page_title='Suggestions / comments welcome', page_icon='📣')
+
 st.title('Suggestion box')
 st.caption('Critical comments / suggestions to improve the site are welcome')
 comment()
