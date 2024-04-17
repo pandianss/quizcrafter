@@ -6,7 +6,7 @@ def main():
         toast_message = messages.readline()
     st.set_page_config(page_title='The Constitution of India . QuizCrafter',page_icon='assets\\color.svg')    
     st.toast(toast_message)
-    st.sidebar.chat_input('Ask something')
+    st.chat_input('Have a question about The Constitution of India? Ask here.')
     st.title(':open_book: The Constitution of India')
     st.markdown(':green[Learn all about the world\'s largest living document with the assistance of **AI**]')
     #st.divider()

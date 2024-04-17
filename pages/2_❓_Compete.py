@@ -4,4 +4,4 @@ with open('assets\\toast.txt', 'r') as messages:
 st.set_page_config(page_title='Compete . QuizCrafter',page_icon='assets\\color.svg')    
 st.header('Compete')
 st.toast(toast_message)
-st.sidebar.chat_input('Ask something')
+st.sidebar.ch 
